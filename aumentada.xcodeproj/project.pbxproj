@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FB71A667308901B8008F8CC7 /* altar in Frameworks */ = {isa = PBXBuildFile; productRef = FB71A666308901B8008F8CC7 /* altar */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FB4BAA2230865EE400089136 /* aumentada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aumentada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FB71A6643088FF04008F8CC7 /* Exceptions for "aumentada" folder in "aumentada" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				altar/Package.realitycomposerpro,
+				altar/Package.swift,
+				altar/Sources/altar/altar.rkassets,
+				altar/Sources/altar/altar.swift,
+			);
+			target = FB4BAA2130865EE400089136 /* aumentada */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FB4BAA2430865EE400089136 /* aumentada */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FB71A6643088FF04008F8CC7 /* Exceptions for "aumentada" folder in "aumentada" target */,
+			);
 			path = aumentada;
 			sourceTree = "<group>";
 		};
@@ -23,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB71A667308901B8008F8CC7 /* altar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +86,7 @@
 			);
 			name = aumentada;
 			packageProductDependencies = (
+				FB71A666308901B8008F8CC7 /* altar */,
 			);
 			productName = aumentada;
 			productReference = FB4BAA2230865EE400089136 /* aumentada.app */;
@@ -94,6 +116,9 @@
 			);
 			mainGroup = FB4BAA1930865EE400089136;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FB71A665308901B8008F8CC7 /* XCLocalSwiftPackageReference "altar" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FB4BAA2330865EE400089136 /* Products */;
 			projectDirPath = "";
@@ -334,6 +359,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		FB71A665308901B8008F8CC7 /* XCLocalSwiftPackageReference "altar" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = altar;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB71A666308901B8008F8CC7 /* altar */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = altar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB4BAA1A30865EE400089136 /* Project object */;
 }

@@ -6,7 +6,7 @@
 //
 import SwiftUI
 import RealityKit
-// import ar_realitykit
+import altar
 import Combine
 
 
@@ -47,8 +47,8 @@ class Controlador{
         }
         
         for modelo in modelos_disponibles{
-            guard let entidad = try? await Entity(named: modelo.modelo, in: ar_realitykitBundle) else {
-            // guard let entidad = try? await ModelEntity(mesh: .generateSphere(radius: 0.1)) else {
+           // guard let entidad = try? await Entity(named: modelo.modelo, in: ar_realitykitBundle) else {
+             guard let entidad = try? await ModelEntity(mesh: .generateSphere(radius: 0.1)) else {
                 fatalError("Modelo \(modelo.modelo) no encontrado.")
             }
             
@@ -83,16 +83,17 @@ class Controlador{
         
         // Aqui cargamos un modelo importante como el que tendra todas las cosas.
         // guard let modelo_importante = try? await Entity(named: "nombre del modelo", in: tu_bundleBundle) else {
-        guard let modelo_importante = try? await ModelEntity(mesh: .generateSphere(radius: 0.1)) else {
+         guard let modelo_importante = try? await Entity(named: "altar", in: altarBundle) else {
+        //guard let modelo_importante = try? await ModelEntity(mesh: .generateSphere(radius: 0.1)) else {
             fatalError("Fallo al cargar el mdoelo mas importante")
         }
         self.modelo_importante = modelo_importante
         // Lo pegue al suelo
-        let suelo = AnchorEntity(.plane(.horizontal, classification: .floor, minimumBounds: SIMD2(1, 1)))
+        //let suelo = AnchorEntity(.plane(.horizontal, classification: .floor, minimumBounds: SIMD2(1, 1)))
         
-        suelo.addChild(modelo_importante)
+       // suelo.addChild(modelo_importante)
         
-        escenario.addChild(suelo)
+        escenario.addChild(modelo_importante)
     }
     
     
@@ -124,6 +125,7 @@ class Controlador{
     
     func apachurraron_a(_ entidad: Entity){
         entidad.enviar_notificacion("animacion")
+        Text("hola")
     }
 }
 
