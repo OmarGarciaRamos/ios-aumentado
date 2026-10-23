@@ -14,25 +14,9 @@
 		FB4BAA2230865EE400089136 /* aumentada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aumentada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FB71A6643088FF04008F8CC7 /* Exceptions for "aumentada" folder in "aumentada" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				altar/Package.realitycomposerpro,
-				altar/Package.swift,
-				altar/Sources/altar/altar.rkassets,
-				altar/Sources/altar/altar.swift,
-			);
-			target = FB4BAA2130865EE400089136 /* aumentada */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FB4BAA2430865EE400089136 /* aumentada */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FB71A6643088FF04008F8CC7 /* Exceptions for "aumentada" folder in "aumentada" target */,
-			);
 			path = aumentada;
 			sourceTree = "<group>";
 		};

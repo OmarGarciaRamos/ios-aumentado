@@ -1,9 +1,13 @@
 {
   "pathsToIds" : {
-    "\/altar\/Sources\/altar\/altar.rkassets\/Scene.usda" : "2C025DF2-A6D5-4530-9888-2D373E2A7066"
+    "\/altar\/Sources\/altar\/altar.rkassets\/Scene.usda" : "2C025DF2-A6D5-4530-9888-2D373E2A7066",
+    "altar\/Sources\/altar\/altar.rkassets\/Scene.usda" : "D4AB9863-1A60-4A7D-B933-DA2091E9B3AD",
+    "altar\/Sources\/altar\/altar.rkassets\/altar.usda" : "A873DA54-6160-4A8B-89EB-DD3F85D48916"
   },
   "projectID" : 8412319941235864869,
   "uuidToIntID" : {
-    "2C025DF2-A6D5-4530-9888-2D373E2A7066" : 2410239293950436842
+    "2C025DF2-A6D5-4530-9888-2D373E2A7066" : 2410239293950436842,
+    "A873DA54-6160-4A8B-89EB-DD3F85D48916" : -2300882290559261893,
+    "D4AB9863-1A60-4A7D-B933-DA2091E9B3AD" : 1161719531931048328
   }
 }
